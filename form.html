@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+</head>
+<style>
+body{
+    background-color: rgb(225, 223, 221);
+
+}
+</style>
+<body>
+    <form method="post" action="formoutput.html" name="Register form"> 
+<!-- first name, last name, mobile, city, mail id , Dob-->
+
+<h1 style="color:black; font-size: 25px; text-align: center;">Form</h1>
+
+<label for="fname">First name:</label>
+<input type="text" value="" name="fname" required><br><br>
+
+<label>Last name:</label>
+<input type="text" value="" name="lname"><br><br>
+
+<label>Mobile No:</label>
+<input type="number"><br><br>
+
+<label>City:</label>
+<input type="text"><br><br>
+
+<label>Email Id:</label>
+<input type="mail"><br><br>
+
+<label>password:</label>
+<input type="password" placeholder="Enter password"><br><br>
+
+<label>Date Of Birth:</label>
+<input type="date"><br><br>
+
+<label>Gender:</label>
+<label>Male</label>
+<input type="radio" value="Male" name="gender:">
+<label>Female</label>
+<input type="radio" value="Female" name="gender"><br>
+
+<label>course:</label>
+
+<label>FSD</label>
+<input type="checkbox" name="course" value="FSD">
+<label>AI</label>
+<input type="checkbox" name="course" value="AI">
+<label>Datascience</label>
+<input type="checkbox" name="course" value="Datascience"><br><br>
+
+<label>Year of Passing:</label>
+<select>
+    <option value="">select</option>
+    <option value="">2021</option>
+    <option value="">2022</option>
+    <option value="">2023</option>
+</select><br><br>
+
+<label>Resume:</label>
+<input type="file" name="resume" value=""><br><br>
+
+
+<label>Feedback:</label><br>
+<textarea name="Comment here" cols="40" rows="5" placeholder="Write here"></textarea><br><br>
+
+<button type="submit">Register</button>
+
+    </form>
+</body>
+
+<script>
+    window.alert("Thanks for submitting");
+</script>
+</html>

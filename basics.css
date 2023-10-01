@@ -1,0 +1,32 @@
+table,th,td{
+    border: 1px solid blue;
+}
+
+h1{
+    color: brown;
+    font-size: 30px;
+}
+h6{
+    color:blueviolet;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+.demo1{
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    text-align: left;
+}
+.demo2{
+    color:chartreuse;
+    font-size: 15px;
+    font-family:Georgia;
+    text-align:center;
+    background-color:rgb(81, 56, 56);
+}
+.demo4{
+    color:dodgerblue
+}
+.specific{
+    color: purple;
+}

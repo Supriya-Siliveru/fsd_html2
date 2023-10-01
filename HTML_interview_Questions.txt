@@ -1,0 +1,197 @@
+1>What is html?
+
+ans: HTML- Hyper Text Markup Language
+HTML describes the structure of a webpage and 
+It consists of many elements which can be used to display the content through browser.
+It comes under frontend part
+
+Ex- 
+  <!DOCTYPE>
+  <html>
+    <head>
+      <title>HTML</title>
+    </head>
+    <body>
+      <p> It is a Standard Markup Language.</p>
+    </body>
+  </html
+
+
+
+2>What is use of Doctype 
+
+ans: Doctype - Document Type Declaration
+It tells the user that its type and version of the document.
+<!DOCTYPE>
+
+3>What is elements and attributes
+
+ans: Elements-Defined by a starting tag and it consists of starting tag, content and closing tags
+Ex- h1 to h6, <p> etc
+<h1> ABOUT ELEMENTS </h1>
+here , <h1> is a starting tag, ABOUT ELEMENTS is content and </h1> is a closing tag
+
+Attributes- attributes are the extra or additional information about the tags
+and it is used to adjust the behaviour and display of the elements
+<type>, <method>, <name> etc
+
+4>Explain tags in html
+ans: Tags are the keywords used on a web page and it define how our web browser must format and display the web page
+Ex- <p>,<span>,<div>,<img>, <audio>, <video>,<header>, <footer> etc
+
+5>Difference between block and inline elements 
+
+ans: 1.Block level elements:- They always starts with new line or one by one,
+It will take full eidth of the page.
+Ex- <p>, h1 to h6, div etc
+
+<p> Hii </p>
+<p> Guys! </p>
+
+output: Hii
+        Guys!
+
+2.Inline Elemnts:- side by side or horizontally and its width depends on its content width
+
+Ex- <a>, <span> ,<img>, <label> etc
+
+6>Difference between semantics and non semnatics elements
+
+ans: 1.Semantic Elements:- Describes its meaning to both browser and developer
+Ex- <header>,<footer>, <form>, <table>, <article>,<section> etc
+
+2. Non- semantic Elements:- which has no meaning
+Ex- <span>,<div>, <br>, <b>, <i>, <u> etc
+
+7>Diffference between readonly and disabled 
+
+ans: Readonly:- Cannot edit, but focus will be enabled and data will be submitted
+Disabled:- cannot edit, No focus, data not submitted
+
+8>Use of required attribute 
+
+ans: required attribute is used a particular field is mandatory to fill up
+Mostly we see this attribute in forms such as signup forms, registration forms, login forms and so on
+
+Ex- <label>Email:</label>
+    <input type="text" value="" name="email" required>
+that means it is mandatory to fill email section otherwise form cannot move for further processes
+
+9>Explain anchor tag and its attributes
+
+ans: anchor tag -<a>
+ it is used to create a hyperlink on the webpage. 
+This hyperlink is used to link the webpage to other web pages or some section of the same web page.
+
+<a href="https://www.youtube.com/watch?v=DKGwtuL8Q6U"></a>
+
+10>How to embed image on webpage 
+
+ans:  We can embed image on webpage using <img> tag
+we cannot directly insert an image on webpage instead we can refer to an img
+
+<img src="some image.jpg" alt="It is an image of car">
+
+src- source file, alt- alternate name 
+if source is failed due to any type of issue, the alternate name is prompted instead of an image
+
+11>What is list,types of list and how to display list in html
+
+ans: used to specify lists of elements
+There are 3 types of lists: 
+1. Ordered List: numbers, roman numbers, A to Z , a to Z   By default we get numbers - 1,2,3...
+
+<ol type="A">
+  <li>HTML</li>
+  <li>CSS</li>
+</ol>
+
+2. Unordered list: bulleted, circle, disc, square          By default we get bulleted
+
+<ul type="circle">
+   <li>Node</li>
+   <li>Mongo</li>
+</ul>
+
+3. Description list
+
+<dl>
+   <dt>Arts</dt>
+      <dd> I'm a pencil sketching portrait artist.</dd>
+</dl>
+
+12>How to embed audio and video tag;
+
+ans:using source and type
+controls are used to manage play, pause, download, playback speed of video or audio
+
+Audio attributes: autoplay, controls, muted
+
+<audio controls>
+    <source src="Audio.mp3" type="Audio/mpeg">
+</audio><br>
+
+video attributes: autoplay, controls, muted, width, height, poster
+
+<video width="500px" height="500px" controls = "controls">
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+13>What is iframe?
+
+ans:An iframe- inline frame, is an HTML element that contains another HTML document within it.
+Ex- to embed other documents, other applications, webpages ,youtube videos
+
+14>Semantics tag-- header,footer, arcticle main, section nav,aside
+
+ans:
+1.	<article>	    Defines an article
+2.	<aside>	      Defines content aside from the page content
+3.	<details>	    Defines additional details that the user can view or hide
+4.	<figcaption>	Defines a caption for a <figure> element
+5.	<figure>	    Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+6.	<footer>	    Defines a footer for a document or section
+7.	<header>	    Specifies a header for a document or section
+8.	<main>	      Specifies the main content of a document
+9.	<mark>	      Defines marked/highlighted text
+10.	<nav>	        Defines navigation links
+11.	<section>	    Defines a section in a document
+12.	<summary>	    Defines a visible heading for a <details> element
+13.	<time>	      Defines a date/time
+
+15>How to create form and explain form attribtes name action method 
+
+ans: Using tags such as <label>, <input>, <text>, <email>, <date>, <password>, <select>, <radio> ans so on 
+  <!DOCTYPE>
+  <html>
+    <head>
+      <title>form</title>
+    </head>
+    <body>
+          <form method="post" action="formoutput.html" name="Register form"> 
+
+<label for="fname">First name:</label>
+<input type="text" value="" name="fname" required>
+
+<label>Mobile No:</label>
+<input type="number">
+    </body>
+  </html
+
+Form attribtes:
+Name- Name of a form
+
+Method- Through method attribte we will submit to url or server
+
+Action- where it need to be submitted or the actual location of Url, server
+
+16>Difference between get and post 
+
+ans:Both are http methods.
+GET:- Entered data will be visible in url, large data files cannot be sent because request parameter is appended to url
+POST:- Entered data eill not be visible in url, large data files can be sent and the request parameter is appended into body
+
+17>Explain different types of input elements 
+
+ans: butoon, radio, checkbox, text, email, date, select, submit, 
+file, reset,range, password, hidden, week,month, url,time etc
